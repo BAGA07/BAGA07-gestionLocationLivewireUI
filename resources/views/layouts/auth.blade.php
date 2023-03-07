@@ -14,16 +14,19 @@
     <link rel="stylesheet" href="{{ asset('css/icheck-bootstrap.min.css') }}">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset('css/adminlte.min.css') }}">
+    <style>
+    .login-box {
+    transform: translateY(-100px);
+    min-width: 700px;
+}
+    </style>
 </head>
-<body class="hold-transition login-page">
+<body class="hold-transition login-page bg-dark">
 <div class="login-box">
     <div class="login-logo">
-        <a href="/">{{ config('app.name', 'Laravel') }}</a>
+        @yield('form')
     </div>
-    <!-- /.login-logo -->
-    <div class="card">
-        @yield('content')
-    </div>
+ 
 </div>
 <!-- /.login-box -->
 
