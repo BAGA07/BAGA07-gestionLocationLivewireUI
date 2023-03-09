@@ -68,7 +68,7 @@
 
 <div class="login-box ">
   <div class="login-logo">
-    <a href="#" style="color: #b3b6b9; font-size: 1.8em;"><b style="font-weight:bold;">Baga</b>CORPORATE v.1</a>
+    <a href="#" style="color: #b3b6b9; font-size: 1.8em;"><b style="font-weight:bold;">BAGA</b>CORPORATE v.1</a>
     <hr/>
 
 

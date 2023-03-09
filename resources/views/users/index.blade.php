@@ -1,7 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.master')
 
-@section('content')
-    <!-- Content Header (Page header) -->
+@section('contenu')
+  {{--   <!-- Content Header (Page header) -->
     <div class="content-header">
         <div class="container-fluid">
             <div class="row mb-2">
@@ -10,7 +10,7 @@
                 </div><!-- /.col -->
             </div><!-- /.row -->
         </div><!-- /.container-fluid -->
-    </div>
+    </div> --}}
     <!-- /.content-header -->
 
     <!-- Main content -->
@@ -36,7 +36,7 @@
                                 <tbody>
                                 @foreach($users as $user)
                                     <tr>
-                                        <td>{{ $user->name }}</td>
+                                        <td>{{ $user->nom }}</td>
                                         <td>{{ $user->email }}</td>
                                     </tr>
                                 @endforeach
@@ -46,7 +46,7 @@
                         <!-- /.card-body -->
 
                         <div class="card-footer clearfix">
-                            {{ $users->links() }}
+                          {{--   {{ $users->links() }} --}}
                         </div>
                     </div>
 

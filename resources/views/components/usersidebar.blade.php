@@ -9,8 +9,9 @@
 
                 <h3 class="profile-username text-center ellipsis">{{ auth()->user()->prenom }} {{ auth()->user()->nom }}</h3>
 
-                <p class="text-muted text-center">
-                {{-- @foreach(auth()->user()->roles as $role)
+                <p class="text-muted text-center ellipsis">
+                {{getRolesName()}}
+               {{--  @foreach(auth()->user()->roles as $role)
                     {{ \Illuminate\Support\Str::ucfirst($role->nom) }}
                     ,
                 @endforeach --}}
