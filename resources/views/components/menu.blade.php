@@ -1,9 +1,10 @@
 <nav class="mt-2">
+
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
         <li class="nav-item">
-            <a href="{{ route('home') }}" class="nav-link {{-- {{ setMenuClass('home', 'active') }} --}}">
+            <a href="{{ route('home') }}" class="nav-link {{ setMenuActive('home') }}">
               <i class="nav-icon fas fa-home"></i>
               <p>
                 Accueil
@@ -38,19 +39,19 @@
         @endcan
 
         @can("admin")
-        <li class="nav-item {{-- {{ setMenuClass('admin.habilitations.', 'menu-open') }} --}}">
-            <a href="#" class="nav-link {{-- {{ setMenuClass('admin.habilitations.', 'active') }} --}}">
+        <li class="nav-item {{ setMenuClass('admin.habilitations.', 'menu-open') }}">
+            <a href="#" class="nav-link {{ setMenuClass('admin.habilitations.', 'active') }}">
               <i class=" nav-icon fas fa-user-shield"></i>
               <p>
                 Habilitations
-                <i class="right fas fa-angle-left"></i>
+                <i class="right fas fa-angle-left "></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item ">
                 <a
-                href="{{-- {{ route('admin.habilitations.users.index') }} --}}"
-                class="nav-link {{-- {{ setMenuClass('admin.habilitations.users.index', 'active') }} --}}"
+                href="{{ route('admin.habilitations.users.index') }}"
+                class="nav-link active{{ setMenuActive('home') }}"
                 >
                   <i class=" nav-icon fas fa-users-cog"></i>
                   <p>Utilisateurs</p>

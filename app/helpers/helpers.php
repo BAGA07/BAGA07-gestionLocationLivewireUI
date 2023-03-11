@@ -1,8 +1,34 @@
 <?php
+
+use Illuminate\Support\Str;
+
 function userFullName()
 {
 
     return auth()->user()->prenom . " " . auth()->user()->nom;
+}
+
+//Comparaison de la route actuel a la route passer en parametre
+function setMenuClass($route, $classe)
+{
+    $routeActuel = request()->route()->getName();
+    if (contains($routeActuel, $route)) {
+        return $classe;
+    }
+}
+
+//Comparaison de la route actuel a la route passer en parametre
+function setMenuActive($route)
+{
+    $routeActuel = request()->route()->getName();
+    if ($routeActuel === $route) {
+        return "active";
+    }
+}
+
+function contains($container, $contenu)
+{
+    return Str::contains($container, $contenu);
 }
 
 function getRolesName()
