@@ -73,19 +73,19 @@
   <!-- Main Footer -->
   <footer class="main-footer">
     <!-- To the right -->
-    <div class="float-right d-none d-sm-inline">
+  {{--   <div class="float-right d-none d-sm-inline">
       Anything you want
-    </div>
+    </div> --}}
     <!-- Default to the left -->
     <strong>Copyright &copy; 2023 <a href="#">AboubacarBagaayoko.com</a>.</strong> All rights reserved.
   </footer>
 </div>
+<script src="{{ asset('js/jquery.min.js') }}"></script>
 
-@vite('resources/js/app.js')
+{{-- @vite('resources/js/app.js') --}}*
 <!-- AdminLTE App -->
 <script src="{{ asset('js/adminlte.min.js') }}" defer></script>
 <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
-<script src="{{ asset('js/jequery.min.js') }}"></script>
 
 @yield('scripts')
 </body>
